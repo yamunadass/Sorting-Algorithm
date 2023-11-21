@@ -42,7 +42,24 @@ selection_sort(list_of_nums)
 ```
 ii)	#Insertion Sort
 ```
+''' 
+Program to sort the elements in the list using the Insertion Sort algorithm.
+Developed by: YAMUNA M
+RegisterNumber: 23005405
+'''
+def insertion_sort(nums):
+    for i in range(1,len(nums)):
+        insert= nums[i]
+        j=i-1
+        while j>=0 and nums[j]>insert:
+            nums[j+1]=nums[j]
+            j-=1
+        nums[j+1]=insert
+    print(nums)
 
+
+list_of_nums = eval(input())
+insertion_sort(list_of_nums)
 
 
 
@@ -52,6 +69,7 @@ ii)	#Insertion Sort
 
 ## Output:
 ![output](./sortingalgorithm.png)
+![Screenshot 2023-11-21 193154](https://github.com/yamunadass/Sorting-Algorithm/assets/138971172/53a306cb-2210-4d58-a05f-f322c23e51fa)
 
 ## Result:
 Thus the program is written to perform selection sort and insertion sort using python programming.
